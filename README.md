@@ -1,51 +1,5 @@
-KAUNO TECHNOLOGIJOS UNIVERSITETAS
-INFORMATIKOS FAKULTETAS
-
-
-
-![image](https://user-images.githubusercontent.com/23249189/209313088-8a1ff165-59d2-45ed-a8ac-19c25b588cc1.png)
-
-
-
-
-
-Saityno taikomųjų programų projektavimas (T120B165)
-Projekto ataskaita
-Žaidimų turnyrų sistema
-
-
-
-Darbą atliko:
-IFF-9/2 gr. Studentas
-Vilmantas Pieškus
-
-Darbą priėmė:
-doc. prakt. Rasa Mažutienė
-doc. prakt. Petras Tamošiūnas
-
-
-
-KAUNAS 2022
-
-Turinys
-1. Sprendžiamo uždavinio aprašymas	2
-1.1. Sistemos paskirtis	2
-1.2. Funkciniai reikalavimai	2
-2. Pasirinktų technologijų aprašymas	3
-3. Sistemos architektūra	4
-4. Naudotojo sąsajos projektas	5
-5. API specifikacija	10
-6. Išvados	12
-
-
-1. Sprendžiamo uždavinio aprašymas
-1.1. Sistemos paskirtis
-
-Projekto tikslas – sukurti žaidimų turnyrų sistemą, kurioje yra galima lengvai sekti žaidimų istoriją ir rungtis, kurios yra žaidžiamos tuo metu. Tai padės sukurti žaidimų eiliškumą be rankinio rašymo.
-Veikimo principas – pačią kuriamą platformą sudaro dvi dalys: internetinė aplikacija, kuria naudosis žaidėjai ir administratorius bei aplikacijų programavimo sąsaja (angl. trump. API).
-Žaidėjas, prisiregistruos prie internetinės aplikacijos, galės susidaryti savo profilį ir ieškoti bei prisiregistruoti prie turnyrų. Prisiregistravę prie turnyro žaidėjai gali patys įkelti rungties rezultatus ir tada turės teisėjas ar turnyro moderatorius patvirtinti rezultatus. Bet koks žaidėjas gali sukurti turnyrą ir būti to turnyro administratorius. Galima išregistruoti žaidėją, pakeisti turnyrų taisykles ir pradėti/stabdyti turnyrą. Administratorius gali pridėti žaidimus prie žaidimų sąrašo, skirti tam tikras teises žaidėjams ir redaguoti patį puslapį.
-
-1.2. Funkciniai reikalavimai 
+Naudota react.js.
+Funkciniai reikalavimai
 
 Neregistruotas sistemos naudotojas galės: 
 1. Peržiūrėti platformos reprezentacinį puslapį; 
@@ -210,5 +164,4 @@ http://localhost:5106/api/tournaments/3/games/4
     "profilePicture": "684das8d64ad-asd16w"
 }
 
-6. Išvados
-Modulio metu buvo sukurta dalinai veikianti žaidimų turnyrų sistema skirta žaidėjams. Buvo išmokta kurti API su ASP.NET pagal pristatytą kūrimo specifikaciją, pagilintos žinios su React.js. Išmokta pritaikyti JWT tokenus autorizacijai ir autentifikacijai. Back-end ir front-end galutiniame projekte nebuvo sujungti, todėl daug funkcionalumų neveikė, tačiau išpildyti visi front-end’o reikalavimai. 	
+	
