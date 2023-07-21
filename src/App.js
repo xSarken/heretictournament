@@ -1,5 +1,5 @@
 import React from "react";
-import { BrowserRouter, Routes, Route } from "react-router-dom";
+import { HashRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./component/LandingPage/LandingPage";
 import NavBar from "./component/NavBar/NavBar";
 import Footer from "./component/Footer/Footer";
@@ -16,7 +16,7 @@ import User from "./component/User/styles/User";
 const App = () => {
   return (
     <div>
-      <BrowserRouter>
+      <HashRouter>
         <NavBar />
         <Routes>
           <Route path="/" element={<LandingPage />}></Route>
@@ -32,7 +32,7 @@ const App = () => {
           <Route path="/Mb_lol" element={<Mb_lol />}></Route>
         </Routes>
         <Footer />
-      </BrowserRouter>
+      </HashRouter>
     </div>
   );
 };
