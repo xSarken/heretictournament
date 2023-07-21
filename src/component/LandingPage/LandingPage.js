@@ -1,4 +1,4 @@
-import React, { useState, useEffect, useRef } from "react";
+import React, { useState, useEffect, useRef, useLayoutEffect } from "react";
 import "./LandingPage.css";
 import LandingPageList from "./LandingPageList";
 import LandingPageList_right from "./LandingPageList_right";
@@ -11,6 +11,9 @@ import Image13 from "../../Images/13.jpg";
 import Image14 from "../../Images/14.jpg";
 
 const LandingPage = () => {
+  useLayoutEffect(() => {
+    window.scrollTo(0, 0);
+  }, []);
   const parallaxImage3 = {
     bgImageStyle: {
       height: "100%",
@@ -430,35 +433,35 @@ const LandingPage = () => {
   ];
   return (
     <div className="LandingPage_main">
-      <Parallax {...parallaxImage3} strength={500} bgImage={Image10}> 
+      <Parallax {...parallaxImage3} strength={500} bgImage={Image10}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">LEAGUE OF LEGENDS</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image11}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">VALORANT</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image12}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">CALL OF DUTY</h1>
           </div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image13}>
         <section className="Images-6-section">
-          <div class="waviy-Page4"></div>
+          <div className="waviy-Page4"></div>
         </section>
       </Parallax>
       <Parallax {...parallaxImage3} strength={200} bgImage={Image14}>
         <section className="Images-6-section">
-          <div class="waviy-Page4">
+          <div className="waviy-Page4">
             <h1 className="Game_name">Rocket LEAGUE</h1>
           </div>
         </section>

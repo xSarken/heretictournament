@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useEffect, useState } from "react";
 import { HashRouter, Routes, Route } from "react-router-dom";
 import LandingPage from "./component/LandingPage/LandingPage";
 import NavBar from "./component/NavBar/NavBar";
@@ -13,7 +13,25 @@ import Cssgo from "./component/Tournament_Open/Cssgo/Cssgo";
 import Mb_lol from "./component/Tournament_Open/Mobile Lol/Mb_lol";
 import Login from "./component/NavBar/Log in page/Login";
 import User from "./component/User/styles/User";
+import Loading from "./component/Loading";
 const App = () => {
+  const [isLoading, setIsLoading] = useState(true);
+
+  useEffect(() => {
+    const timer = setTimeout(() => {
+      setIsLoading(false);
+    }, 4350);
+
+    return () => clearTimeout(timer);
+  }, []);
+
+  if (isLoading) {
+    return (
+      <div>
+        <Loading />
+      </div>
+    );
+  }
   return (
     <div>
       <HashRouter>
